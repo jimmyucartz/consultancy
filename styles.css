@@ -1,0 +1,68 @@
+.logo {
+  width: 1rem;
+  height: 1rem;
+}
+
+.contact-row {
+  min-height: 5rem;
+}
+
+.test-message {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    23% 75%,
+    11% 88%,
+    14% 75%,
+    0% 75%
+  );
+
+  background-color: rgba(230, 230, 230, 0.478);
+
+  height: 10rem;
+}
+
+.sect-title {
+  color: rgba(17, 17, 90, 0.74);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 4rem;
+}
+
+section {
+  margin: 1rem 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-item img {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .services .card {
+    height: 35rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .services .card {
+    height: 28rem;
+  }
+}
+
+.contact iframe {
+  height: 25rem;
+}
+
+@media screen and (min-width: 992px) {
+  .contact iframe {
+    height: 35rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .contact iframe {
+    height: 20rem;
+  }
+}
