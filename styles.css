@@ -76,6 +76,9 @@ section {
     font-size: 3rem !important;
     padding: 10% !important;
   }
+  footer {
+    height: 20rem;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -89,6 +92,10 @@ section {
 
   .test-message {
     /* min-height: 00px; */
+  }
+
+  footer {
+    height: auto !important;
   }
 }
 
@@ -191,4 +198,41 @@ li.nav-item i {
   background-color: yellow;
   height: 5px;
   width: 50px;
+}
+
+footer {
+  background-image: url(https://consulting.stylemixthemes.com/los-angeles/wp-content/uploads/sites/28/2018/11/footer_bg.jpg);
+  position: relative;
+  color: white;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: yellow;
+  }
+}
+
+.foot_link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer_date {
+  font-size: small;
+  color: rgb(180, 180, 180);
 }
