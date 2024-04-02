@@ -18,7 +18,7 @@
     0% 75%
   ); */
 
-  background-color: rgba(230, 230, 230, 0.775);
+  background-color: rgba(230, 230, 230, 0.4);
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -63,7 +63,7 @@ section {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .services .card {
-    height: 30rem;
+    height: 32rem;
   }
 }
 
@@ -119,6 +119,9 @@ section {
 @media screen and (max-width: 767px) {
   .contact-card {
     height: 300px !important;
+  }
+  .contact-row h4 {
+    font-size: medium !important;
   }
 }
 
@@ -193,8 +196,7 @@ li.nav-item i {
 }
 .name + div {
   color: purple;
-  font-weight: 200;
-  font-style: italic;
+  font-weight: 400;
 }
 
 /*
@@ -288,4 +290,18 @@ footer a {
   border: none;
   background-color: rgba(128, 128, 128, 0.111);
   padding: 10px;
+}
+
+.card-services {
+  transition: all ease-in-out 0.5s;
+}
+.card-services.active {
+  background-color: rgba(17, 17, 90, 0.86);
+  color: white;
+  cursor: default;
+  transition: all ease-in-out 0.5s;
+
+  button {
+    color: white;
+  }
 }
