@@ -1,3 +1,9 @@
+.navbar-brand {
+  font-family: "Redressed", cursive;
+  font-weight: 400;
+  font-size: x-large;
+}
+
 .logo {
   width: 1rem;
   height: 1rem;
