@@ -14,6 +14,17 @@ $(() => {
   });
   $(".sect-title").fadeIn(1000);
   //
+  $(".navbar-tog-btn").click(() => {
+    if ($(".navbar-toggler").hasClass("collapsed")) {
+      $(".navbar-tog-btn").removeClass("bi-x");
+      $(".navbar-tog-btn").addClass("bi-list");
+    } else {
+      $(".navbar-tog-btn").removeClass("bi-list");
+      $(".navbar-tog-btn").addClass("bi-x");
+    }
+  });
+
+  //
   $(".case").mouseenter(function () {
     $(this.children[0].children[0])
       .fadeIn()
