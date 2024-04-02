@@ -34,7 +34,7 @@
   display: none;
   color: rgba(17, 17, 90, 0.74);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 section {
@@ -49,6 +49,9 @@ section {
 @media screen and (min-width: 992px) {
   .carousel-item.active {
     height: 85dvh;
+  }
+  .contact-us-row {
+    height: 400px !important;
   }
 }
 
@@ -79,6 +82,9 @@ section {
   footer {
     height: 20rem;
   }
+  .contact-card {
+    font-size: large !important;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -96,6 +102,23 @@ section {
 
   footer {
     height: auto !important;
+  }
+
+  .contact-card {
+    font-size: x-small !important;
+    i {
+      font-size: large;
+    }
+  }
+
+  .contact-us-row {
+    height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-card {
+    height: 300px !important;
   }
 }
 
@@ -235,4 +258,34 @@ footer a {
 .footer_date {
   font-size: small;
   color: rgb(180, 180, 180);
+}
+
+.contact-card {
+  background-color: rgba(17, 17, 90, 0.74);
+  color: white;
+  font-size: medium;
+
+  a {
+    color: white;
+  }
+}
+
+.email_link {
+  color: rgb(37, 37, 87);
+  font-weight: lighter;
+}
+
+.single-contact {
+  color: rgb(99, 97, 97);
+}
+
+.contact-name {
+  color: rgba(17, 17, 90, 0.86);
+}
+
+.contact input,
+.contact textarea {
+  border: none;
+  background-color: rgba(128, 128, 128, 0.111);
+  padding: 10px;
 }
